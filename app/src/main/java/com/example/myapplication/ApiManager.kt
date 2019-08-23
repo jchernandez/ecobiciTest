@@ -2,13 +2,13 @@ package com.example.myapplication
 
 import android.content.Context
 import org.json.JSONObject
-import android.R
+
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.io.StringWriter
 
 
-open class ApiMannager(private val context: Context) {
+open class ApiManager(private val context: Context) {
 
     internal fun getStations():JSONObject {
         val input = context.resources.openRawResource(R.raw.ecobici)
